@@ -12,9 +12,8 @@ struct LoadingViewModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         if isLoading {
-            ProgressView("Loading State...")
-                .foregroundColor(.red)
-                .background(.yellow)
+            ProgressView()
+                .tint(.blue)
         } else {
             content
         }
